@@ -1,31 +1,17 @@
 #include <iostream>
+#include <string>
+
 using namespace std;
-
-class Person {
-public:
-    int m_age;
-
-    Person() {
-        cout << "Person::Person()" << endl;
-    }
-
-    Person(int age) {
-        cout << "Person::Person(int age)" << endl;
-    }
-};
-
-class Student : public Person {
-public:
-    int m_no;
-    
-    Student() : Person(10) {
-        cout << "Student::Student()" << endl;
-    }
-};
 
 int main()
 {
-    Student student;
+    int n;
+    cin >> n;
+    string str;
+    for (int i = 0; i < n; i++) {
+        cin >> str;
+        for (int j = 0; j < strlen(str); j++)
+    }
 
     return 0;
 }
