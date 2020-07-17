@@ -6,8 +6,11 @@ using namespace std;
 class Lovers {
 public:
     Lovers(string theName);
+
     void kiss(string theName);
+
     void ask(string theName);
+
     friend class Others;
 
 protected:
@@ -23,9 +26,9 @@ void kiss(string theName) {
 }
 
 void ask(string theName) {
-    cout << "I ask " << theName << "do something"<< endl;
+    cout << "I ask " << theName << "do something" << endl;
 }
- 
+
 class Boyfriend : public Lovers {
 public:
     Boyfriend(string theName);
@@ -47,7 +50,9 @@ Girlfriend::Girlfriend(string theName) : Lovers(theName) {
 class Others {
 public:
     Others(string theName);
+
     void kiss(string theName);
+
 protected:
     string name;
 };
@@ -60,8 +65,7 @@ void Others::kiss(string name) {
     cout << "kiss " << name << endl;
 }
 
-int main()
-{
+int main() {
     Others others("others");
     Girlfriend girlfriend("girl");
     Boyfriend boyfriend("boy");

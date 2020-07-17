@@ -2,7 +2,7 @@
 
 #define FULL_GAS 85
 
-using  namespace std;
+using namespace std;
 
 class Car {
 public:
@@ -12,10 +12,15 @@ public:
     unsigned int wheel;
 
     void setColor(string clo);
+
     void setEngine(string eng);
+
     void setWhell(unsigned int whe);
+
     void fillTank(int liter);
+
     int running(void);
+
     void warning(void);
 };
 // :: 是作用域解析操作符,作用是告诉编译器这个
@@ -48,17 +53,17 @@ int Car::running(void) {
 void Car::warning(void) {
     cout << "WARNING!!" << "还剩 " << 100 * gas_tank / FULL_GAS << '%' << "油量!";
 }
-int main()
-{
+
+int main() {
     char i;
     Car mycar, car1;
 
     mycar.setColor("WHITE");
     mycar.setEngine("V8");
     mycar.setWhell(4);
-    
+
     mycar.gas_tank = FULL_GAS;
-    car1 = mycar; 
+    car1 = mycar;
     // 可以
     while (mycar.running() > 0) {
         if (mycar.running() < 10) {

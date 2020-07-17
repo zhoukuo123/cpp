@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 class Car {
@@ -8,8 +9,7 @@ public:
     Car(int &price) : m_price(price) {}
 };
 
-int main()
-{
+int main() {
     return 0;
 }
 

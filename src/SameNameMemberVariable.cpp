@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 class Studnet {
@@ -16,8 +17,7 @@ public:
     int m_age;
 };
 
-int main()
-{
+int main() {
     Undergraduate ug;
     ug.m_age = 10;
     ug.Studnet::m_age = 20;

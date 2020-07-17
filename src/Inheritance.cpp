@@ -7,7 +7,9 @@ class Animal {
 public://这是访问控制,公开的
     Animal(string theName);//构造器
     void eat();
+
     void sleep();
+
     void drool();
 
 protected://被保护的
@@ -17,12 +19,14 @@ protected://被保护的
 class Pig : public Animal {
 public:
     Pig(string theName);
-    void climb();    
+
+    void climb();
 };//子类
 //子类会继承基类的属性和方法
 class Turtle : public Animal {
 public:
     Turtle(string theName);
+
     void swim();
 };
 
@@ -59,8 +63,7 @@ void Turtle::swim() {
     cout << "i'm a turtle, i'm swimming!" << endl;
 }
 
-int main()
-{
+int main() {
     Pig pig("xiaozhu");
     Turtle turtle("xiaogui");
     //pig.name = "xiaowugui";

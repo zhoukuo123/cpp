@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 class Animal {
@@ -16,8 +17,7 @@ public:
     }
 };
 
-int main()
-{
+int main() {
     Animal *cat = new Cat();
     cat->speak();
     return 0;

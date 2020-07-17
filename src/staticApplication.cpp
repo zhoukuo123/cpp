@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 class Car {
@@ -8,9 +9,11 @@ public:
     Car() {
         ms_count++;
     }
+
     ~Car() {
         ms_count--;
     }
+
     static int getCount() {
         return ms_count;
     }
@@ -20,8 +23,7 @@ int Car::ms_count = 0;
 
 Car g_car;
 
-int main()
-{
+int main() {
     Car car;
     Car *p = new Car();
     cout << Car::getCount() << endl;

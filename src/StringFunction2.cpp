@@ -5,11 +5,10 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     string strOutput = "|0|1|2|";
     string strObj = "|1|";
-    
+
     size_t nLoc = strOutput.find(strObj);
     // find方法的返回类型为size_t,
     // 如果检索到子串,返回子串在字符串

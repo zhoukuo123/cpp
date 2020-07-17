@@ -2,7 +2,7 @@
 
 using namespace std;
 
-template <typename elemType> 
+template<typename elemType>
 //定义一个模版
 
 void print(elemType *pBegin, elemType *pEnd) {
@@ -12,14 +12,13 @@ void print(elemType *pBegin, elemType *pEnd) {
     }
 }
 
-int main()
-{
+int main() {
     int num[5] = {0, 1, 2, 3, 4};
     char name[5] = {'F', 'i', 's', 'h', 'C'};
 
-    print(num, num+5);
+    print(num, num + 5);
     cout << '\n';
-    print(name, name+5);
+    print(name, name + 5);
     cout << '\n';
 
     return 0;

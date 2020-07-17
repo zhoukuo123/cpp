@@ -2,8 +2,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     const int ITEM = 10;
     int num[ITEM];
     int sum = 0;
@@ -15,10 +14,10 @@ int main()
             cout << "please input right data:";
 
         } //cin当输入错误时返回0
-        
+
         sum += num[i];
     }
-    ave = (double)sum / ITEM;
+    ave = (double) sum / ITEM;
     cout << sum << '\n' << ave << endl;
     return 0;
 }

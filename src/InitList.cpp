@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 class Person {
@@ -17,9 +18,8 @@ public:
     // 这个构造函数与上面的构造函数等价
 };
 
-int main()
-{
-    Person person(18, 180);   
+int main() {
+    Person person(18, 180);
     cout << person.m_age << endl;
     cout << person.m_height << endl;
     return 0;

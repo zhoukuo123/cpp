@@ -1,11 +1,11 @@
 #include <iostream>
+
 using namespace std;
 
-int main()
-{
-    
+int main() {
+
     __asm {
-        mov eax, 10
+    mov eax, 10
     }
 
     return 0;

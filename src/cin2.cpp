@@ -2,8 +2,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     char str[20];
 
     cin.ignore(7);

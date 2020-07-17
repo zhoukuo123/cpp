@@ -4,8 +4,7 @@ using namespace std;
 
 void swap(int &x, int &y);
 
-int main()
-{
+int main() {
     int x, y;
     cin >> x >> y;
 

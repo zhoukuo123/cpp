@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 class Person {
@@ -27,8 +28,7 @@ Person g_person1(); // 全局的函数声明
 // 返回值  函数名
 Person g_person2(10); // Person(int)
 
-int main()
-{
+int main() {
     Person person0; // Person()
     Person person1(); // 局部的函数声明
     Person person2(20); // Person(int)

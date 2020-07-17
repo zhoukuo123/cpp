@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 class Person {
@@ -6,13 +7,13 @@ public:
     int m_id;
     int m_age;
     int m_height;
+
     void display() {
         cout << m_id << m_age << m_height << endl;
     }
 };
 
-int main()
-{
+int main() {
     Person person;
     person.m_id = 1;
     person.m_age = 2;

@@ -9,10 +9,13 @@ public:
     ofstream fileOutput;
 
     StoreQuote();
+
     ~StoreQuote();
 
     void inputQuote();
+
     void inputSpeaker();
+
     int write();
 
 };
@@ -37,14 +40,12 @@ int StoreQuote::write() {
     if (fileOutput.is_open()) {
         fileOutput << quote << "|" << speaker << "\n";
         return 1;
-    }
-    else {
+    } else {
         return 0;
     }
 }
 
-int main()
-{
+int main() {
     StoreQuote quote;
 
     cout << "请输入一句名言: \n";
@@ -53,8 +54,7 @@ int main()
     quote.inputSpeaker();
     if (quote.write()) {
         cout << "Successful!";
-    }
-    else {
+    } else {
         cout << "Sorry, write fail!!";
         return 1;
     }

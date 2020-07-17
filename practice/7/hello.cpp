@@ -9,15 +9,14 @@ WINDOW *create_newwin(int height, int width, int starty, int startx) {
     return local_win;
 }
 
-int main()
-{
+int main() {
     initscr(); // 初始化进入NCURSES模式
     printw("Hello World!"); // 在虚拟屏上打印Hello World!
     printw("string");
     mvprintw(1, 20, "string");
     refresh(); // 将虚拟屏幕上的内容写到显示器上, 并刷新
     WINDOW *local_win = create_newwin(20, 20, 2, 2);
-    wprintw(local_win, "string"); 
+    wprintw(local_win, "string");
     mvwprintw(local_win, 3, 3, "string");
     refresh();
     getch();

@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 class Person {
@@ -21,8 +22,7 @@ public:
     //必须显式的调用父类的有参构造函数.
 };
 
-int main()
-{
+int main() {
     Student student;
     return 0;
 }

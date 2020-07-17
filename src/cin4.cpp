@@ -2,12 +2,11 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     const int SIZE = 50;
     //c++里提倡用const少用宏定义
     char buf[SIZE];
-    
+
     cout << "请输入一段文本:";
     cin.read(buf, 20);
 

@@ -2,8 +2,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     int width = 4;
     char str[20];
     cout << "请输入一段文本:\n";

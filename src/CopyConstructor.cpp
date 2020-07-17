@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 class Car {
@@ -8,6 +9,7 @@ public:
     Car(int price = 0, int length = 0) : m_price(price), m_length(length) {
         cout << "Car(int price = 0, int length = 0)" << endl;
     }
+
     // 拷贝构造函数
     Car(const Car &car) {
         cout << "Car(const Car &car)" << endl;
@@ -20,8 +22,7 @@ public:
     }
 };
 
-int main()
-{
+int main() {
     Car car1;
     Car car2(100);
     Car car3(100, 5);

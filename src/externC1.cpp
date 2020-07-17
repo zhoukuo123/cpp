@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 extern "C" void func() {
@@ -9,9 +10,9 @@ extern "C" void func() {
 extern "C" void func(int v) {
 
 }
-int main()
-{
-    
+
+int main() {
+
     return 0;
 }
 

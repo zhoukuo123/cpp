@@ -3,8 +3,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     ifstream in;//input file stream输入文件流,是文件读取类
     in.open("test.txt");
     //或

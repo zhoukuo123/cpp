@@ -6,6 +6,7 @@ using namespace std;
 class BaseClass {
 public:
     BaseClass();
+
     ~BaseClass();
 
     void doSomething();
@@ -14,6 +15,7 @@ public:
 class SubClass : public BaseClass {
 public:
     SubClass();
+
     ~SubClass();
 };
 
@@ -37,11 +39,10 @@ SubClass::~SubClass() {
     cout << "Enter SubClass Destructors...\n";
 }
 
-int main()
-{
+int main() {
     SubClass subclass;
     subclass.doSomething();
-    
+
     cout << "OK!\n";
     return 0;
 }

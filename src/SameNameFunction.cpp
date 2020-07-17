@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 class Student {
@@ -22,8 +23,7 @@ public:
     }
 };
 
-int main()
-{
+int main() {
     Undergraduate ug;
     ug.Student::eat();
     ug.Worker::eat();

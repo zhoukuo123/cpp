@@ -3,8 +3,7 @@
 
 using namespace std;
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]) {
     if (argc != 3) {
         cerr << "输入形式:copyFile 原文件名 目标文件名\n";
         return 0;

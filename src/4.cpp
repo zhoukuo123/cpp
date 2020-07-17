@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 class Person {
@@ -17,14 +18,13 @@ public:
 class Student : public Person {
 public:
     int m_no;
-    
+
     Student() : Person(10) {
         cout << "Student::Student()" << endl;
     }
 };
 
-int main()
-{
+int main() {
     Student student;
 
     return 0;

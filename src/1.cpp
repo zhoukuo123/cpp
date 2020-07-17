@@ -10,10 +10,14 @@ private:
 
 public:
     void setname(char *name);
+
     void setage(int age);
+
     void setscore(float score);
+
     void show();
 };
+
 //成员函数的定义
 void Student::setname(char *name) {
     m_name = name;
@@ -42,11 +46,10 @@ void Student::setscore(float score) {
 }
 
 void Student::show() {
-    cout << m_name << "的年龄是" << m_age << ", 成绩是"<< m_score << endl;
+    cout << m_name << "的年龄是" << m_age << ", 成绩是" << m_score << endl;
 }
 
-int main()
-{
+int main() {
     //在栈上创建对象
     Student stu;
     stu.setname("小明");

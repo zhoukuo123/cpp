@@ -3,10 +3,9 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     ofstream out; //output file stream 输出文件流 文件写入类
-    
+
     out.open("test.txt");//打开文件,从磁盘加载到内存
 //  ofstream out("test.txt");
     if (!out) {

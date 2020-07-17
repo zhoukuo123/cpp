@@ -2,7 +2,7 @@
 
 using namespace std;
 
-class Human{
+class Human {
 public:
     char fishc;
 
@@ -15,8 +15,7 @@ Human::Human(char fishc) {//定义构造函数
 //右边的是构造函数的参数
 }
 
-int main()
-{
+int main() {
 
 
     return 0;

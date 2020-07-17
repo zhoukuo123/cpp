@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 class Person {
@@ -11,8 +12,7 @@ public:
     int m_score;
 };
 
-int main()
-{
+int main() {
     Person *p = new Student();
     p->m_age = 10;
     // 安全

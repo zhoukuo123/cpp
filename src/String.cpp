@@ -3,8 +3,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     string str;
     cout << "please input string:";
     //string对象一旦初始化就不可变

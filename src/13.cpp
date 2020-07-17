@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 class Point {
@@ -6,6 +7,7 @@ private:
     static void test1() {
         cout << "Point::test1()" << endl;
     }
+
     static int ms_test2;
     int m_x;
     int m_y;
@@ -24,8 +26,7 @@ public:
     };
 };
 
-int main()
-{
+int main() {
 
     return 0;
 }

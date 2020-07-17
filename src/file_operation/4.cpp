@@ -3,8 +3,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     fstream fp("test.txt", ios::in | ios::out);
     if (!fp) {
         cerr << "打开文件失败!" << endl;

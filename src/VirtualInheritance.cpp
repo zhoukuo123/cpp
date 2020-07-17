@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 class Person {
@@ -16,13 +17,12 @@ public:
     int m_salary;
 };
 
-class Undergraduate : public Student ,public Worker {
+class Undergraduate : public Student, public Worker {
 public:
     int m_grade;
 };
 
-int main()
-{
+int main() {
     Undergraduate ug;
     ug.m_age = 10;
     return 0;

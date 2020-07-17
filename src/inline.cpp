@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 inline void func() {
@@ -13,11 +14,10 @@ inline void run() {
     run();
 }
 
-int main()
-{
+int main() {
     func();
     sum(1, 2);
-     
+
     return 0;
 }
 

@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 class Student {
@@ -20,16 +21,17 @@ public:
     void study() {
         cout << "111" << endl;
     }
+
     void work() {
         cout << "333" << endl;
     }
+
     void play() {
         cout << "222" << endl;
     }
 };
 
-int main()
-{
+int main() {
     Student *p = new Undergraduate();
 
     p->study();

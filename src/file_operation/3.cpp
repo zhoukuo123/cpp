@@ -3,8 +3,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     ofstream out("test.txt", ios::app);
     //直接把后面的作为参数传给这个对象的构造函数,
     //用ofstream类搞一个对象,对象的构造函数就是这个对象默认的函数

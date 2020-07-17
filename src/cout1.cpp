@@ -3,11 +3,10 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     double result = sqrt(3.0);
     cout << "对3开方保留小数点0~9位,结果如下:\n" << endl;
-    for (int i = 0; i <=9; i++) {
+    for (int i = 0; i <= 9; i++) {
         cout.precision(i);
         cout << result << endl;
     }

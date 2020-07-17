@@ -6,9 +6,13 @@ using namespace std;
 class Animal {
 public:
     Animal(string theName);
+
     void eat();
+
     void sleep();
+
     void drool();
+
 protected:
     string name;
 };
@@ -16,14 +20,18 @@ protected:
 class Pig : public Animal {
 public:
     Pig(string theName);
+
     void eat();
+
     void climb();
 };
 
 class Turtle : public Animal {
 public:
     Turtle(string theName);
+
     void eat();
+
     void swim();
 };
 
@@ -57,7 +65,7 @@ void Pig::climb() {
 }
 
 Turtle::Turtle(string theName) : Animal(theName) {
-    
+
 }
 
 void Turtle::eat() {
@@ -74,7 +82,7 @@ int main() {
 
     pig.eat();
     turtle.eat();
-    
+
     return 0;
 }
 
